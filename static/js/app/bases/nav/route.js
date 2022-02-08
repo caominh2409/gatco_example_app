@@ -24,6 +24,26 @@ define(function (require) {
 			"route": "tinhthanh/model(/:id)",
 			"$ref": "app/view/TinhThanh/ModelView",
 		},
+		{
+			"collectionName": "xaphuong", 
+			"route": "xaphuong/collection(/:id)",
+			"$ref": "app/view/XaPhuong/CollectionView",
+		},
+		{
+			"collectionName": "xaphuong",
+			"route": "xaphuong/model(/:id)",
+			"$ref": "app/view/XaPhuong/ModelView",
+		},
+		{
+			"collectionName": "thonxom", 
+			"route": "thonxom/collection(/:id)",
+			"$ref": "app/view/ThonXom/CollectionView",
+		},
+		{
+			"collectionName": "thonxom",
+			"route": "thonxom/model(/:id)",
+			"$ref": "app/view/ThonXom/ModelView",
+		},
 
 		{
 			"collectionName": "khachhang",

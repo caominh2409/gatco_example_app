@@ -15,7 +15,20 @@ define(function (require) {
 			"collectionName":"tinhthanh",
 		    "route":"tinhthanh/collection"
 		},
-
+		{
+			"text":"Xã Phường",
+			"icon":"fa fa-child",
+			"type":"view",
+			"collectionName":"xaphuong",
+		    "route":"xaphuong/collection"
+		},
+		{
+			"text":"Thôn Xóm",
+			"icon":"fa fa-child",
+			"type":"view",
+			"collectionName":"thonxom",
+		    "route":"thonxom/collection"
+		},
 		{
 			"text":"Khách hàng",
 			"icon":"fa fa-child",

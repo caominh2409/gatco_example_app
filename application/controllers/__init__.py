@@ -10,7 +10,8 @@ def init_views(app):
     import application.controllers.khachhang
     import application.controllers.hanghoa
     import application.controllers.hoadon
-    
+    import application.controllers.xaphuong
+    import application.controllers.thonxom
     @app.route('/')
     def index(request):
         #return text("Index")

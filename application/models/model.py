@@ -112,3 +112,19 @@ class ChiTietHoaDon(CommonModel):
     dongia = db.Column(Integer)
     thanhtien = db.Column(Integer)
     
+class XaPhuong(CommonModel):
+    __tablename__ = 'xaphuong'
+    id = db.Column(Integer, primary_key=True)
+    ma = db.Column(String(255), unique=True)
+    ten = db.Column(String(255), nullable=False)
+    mota = db.Column(String(255), nullable=True)
+    thonxom = db.relationship("ThonXom", order_by="ThonXom.id", cascade="all, delete-orphan")
+    
+class ThonXom(CommonModel):
+    __tablename__ = 'thonxom'
+    id = db.Column(Integer, primary_key=True)
+    ma = db.Column(String(255), unique=True)
+    ten = db.Column(String(255), nullable=False)
+    xaphuong_id = db.Column(Integer, ForeignKey('xaphuong.id'), nullable=False)
+    xaphuong = db.relationship('XaPhuong')
+    
